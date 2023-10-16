@@ -11,17 +11,21 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
 }
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 21px;
   color: #000;
 }
 
+.page-header {
+  background-color: #fff;
+}
+
 .navigation-link {
-  font-style: 20px;
+  font-size: 20px;
   line-height: 24px;
   color: #000;
   font-weight: 700;
@@ -164,9 +168,18 @@ body {
 }
 
 .subscribe-button {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
+}
+
+.subscribe-email {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
 }
 
 .contacts-phone {
@@ -174,6 +187,10 @@ body {
   line-height: 40px;
   color: #000;
   text-decoration: none;
+}
+
+.page-footer {
+  background-color: #fff;
 }
 
 .wrapper {
@@ -199,13 +216,21 @@ body {
   text-transform: capitalize;
 }
 
-.control {
-  line-height: 23px;
+.control input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .control-input-text {
   line-height: 24px;
   opacity: 0.3;
+}
+
+.filter-button,
+.filter-button-reset {
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .filter-button {
@@ -223,6 +248,13 @@ body {
   text-transform: uppercase;
 }
 
+.select-control {
+  font-family: "PT Sans","Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 28px;
@@ -231,6 +263,10 @@ body {
 .hotel-type,
 .hotel-price {
   color: #333;
+}
+
+.favourite-button, .favourite-button-chosen {
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .favourite-button {
@@ -261,6 +297,14 @@ body {
 .pagination-link-current {
   background-color: #f2f2f2;
   color: #000;
+}
+
+.pagination-link-show-all {
+  background-color: #fff;
+  color: #000;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .subscribe-inner {
