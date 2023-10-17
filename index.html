@@ -29,13 +29,15 @@
           </li>
         </ul>
       </nav>
-      <a class="search" href="#">
-        <span class="visually-hidden">Перейти в поиск</span>
-      </a>
-      <a class="likes" href="#">
-        <span class="visually-hidden">Перейти в избранное</span>
-      </a>
-      <a href="#" class="button">Хочу сюда!</a>
+      <div class="user-menu">
+        <a class="search" href="#">
+          <span class="visually-hidden">Перейти в поиск</span>
+        </a>
+        <a class="likes" href="#">
+          <span class="visually-hidden">Перейти в избранное</span>
+        </a>
+        <a href="#" class="button page-header-button">Хочу сюда!</a>
+      </div>
     </header>
 
     <main class="main-index">
@@ -60,18 +62,20 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <div class="advantages-wrapper">
-              <h3 class="advantages-subtitle">Настоящий городок</h3>
-              <p class="advantages-text">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
+              <div class="advantages-text-block">
+                <h3 class="advantages-subtitle">Настоящий городок</h3>
+                <p class="advantages-text">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </div>
+              <img
+                src="images/advantages-picture-city.jpg"
+                alt="вид на Седону"
+                class="advantages-pic"
+                width="800"
+                height="385"
+              />
             </div>
-            <img
-              src="images/advantages-picture-city.jpg"
-              alt="вид на Седону"
-              class="advantages-pic"
-              width="800"
-              height="385"
-            />
           </li>
           <li class="advantages-item">
             <h3 class="advantages-subtitle">Небольшая площадь</h3>
@@ -93,18 +97,20 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-wrapper">
-              <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
-              <p class="advantages-text">
-                Да, по нему можно пройти! Если вы осмелитесь, разумеется
-              </p>
+              <div class="advantages-text-block">
+                <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
+                <p class="advantages-text">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+              </div>
+              <img
+                src="images/advantages-picture-mountains.jpg"
+                alt="вид на мост"
+                class="advantages-pic"
+                width="800"
+                height="385"
+              />
             </div>
-            <img
-              src="images/advantages-picture-mountains.jpg"
-              alt="вид на мост"
-              class="advantages-pic"
-              width="800"
-              height="385"
-            />
           </li>
         </ul>
       </section>
@@ -120,19 +126,22 @@
           <li class="services-item">
             <h3 class="services-type">Жильё</h3>
             <p class="services-description">
-              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              Рекомендуем пожить<br />
+              в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="services-item">
             <h3 class="services-type">Еда</h3>
             <p class="services-description">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте<br />
+              топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
             <h3 class="services-type">Сувениры</h3>
             <p class="services-description">
-              Не только китайского, но и настоящего местного производства!
+              Не только китайского,<br />
+              но и настоящего местного производства!
             </p>
           </li>
         </ul>
@@ -141,7 +150,7 @@
         <h2 class="visually-hidden">Поиск гостинницы</h2>
         <p class="hotel-search-title">Заинтересовались?</p>
         <p class="hotel-search-description">
-          Укажите предполагаемые даты поездки,и мы покажем вам лучшие
+          Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
         <a href="#" class="button hotel-search-button">
@@ -198,14 +207,14 @@
           </li>
         </ul>
         <a href="tel:+78128121212" class="contacts-phone">+7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru/" class="html-academy-logo"
+          ><img
+            src="images/svg-icons/html-academy-logo.svg"
+            alt="логотип HTML Академии"
+            width="115"
+            height="33"
+        /></a>
       </section>
-      <a href="https://htmlacademy.ru/" class="html-academy-logo"
-        ><img
-          src="images/svg-icons/html-academy-logo.svg"
-          alt="логотип HTML Академии"
-          width="115"
-          height="33"
-      /></a>
     </footer>
   </body>
 </html>
