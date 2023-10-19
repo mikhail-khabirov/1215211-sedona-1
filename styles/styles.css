@@ -1,3 +1,5 @@
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -13,6 +15,8 @@
   src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
+
+/* ГЛОБАЛЬНЫЕ СТИЛИ */
 
 *,
 *::before,
@@ -54,6 +58,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* ШАПКА САЙТА */
 
 .page-header {
   width: 1200px;
@@ -142,12 +148,16 @@ body {
   padding: 8px 34px;
 }
 
+/* ОСНОВНОЕ СОДЕРЖИМОЕ */
+
 .main-index,
 .main-inner {
   flex-grow: 1;
   width: 1200px;
   margin: 0 auto;
 }
+
+/* ПРОМО-БЛОК */
 
 .hero {
   min-height: 485px;
@@ -161,6 +171,8 @@ body {
 .hero-pic-text {
   margin-top: 51px;
 }
+
+/* ПРЕИМУЩЕСТВА */
 
 .advantages {
   padding-top: 69px;
@@ -188,8 +200,8 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 
 .advantages-wrapper {
@@ -202,10 +214,15 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 385px;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:not(:first-child):not(:last-child) {
-  width: 400px;
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-wide {
+  grid-column: 1 / span 3;
 }
 
 .advantages-item:last-child .advantages-wrapper {
@@ -237,13 +254,7 @@ body {
   text-align: center;
 }
 
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item:nth-child(3) {
-  background-color: rgba(131, 179, 211, 0.2);
-}
+/* УСЛУГИ */
 
 .services {
   padding-top: 64px;
@@ -306,6 +317,8 @@ body {
   text-align: center;
 }
 
+/* ПОИСК ОТЕЛЯ */
+
 .hotel-search {
   padding: 96px 0;
   display: flex;
@@ -336,6 +349,8 @@ body {
   font-size: 20px;
   line-height: 36px;
 }
+
+/* БЛОК С ПОДПИСКОЙ */
 
 .subscribe {
   padding: 96px 0 104px;
@@ -395,6 +410,8 @@ body {
   background-color: #f2f2f2;
 }
 
+/* ПОДВАЛ САЙТА */
+
 .page-footer {
   width: 1200px;
   margin: 0 auto;
@@ -402,6 +419,8 @@ body {
 
   background-color: #fff;
 }
+
+/* КОНТАКТЫ */
 
 .contacts {
   margin: 0 auto;
@@ -450,6 +469,8 @@ body {
   background-image: url("../images/svg-icons/social-youtube.svg");
 }
 
+/* СТРАНИЦА КАТАЛОГА */
+
 .wrapper {
   padding: 35px 0 70px;
   background-color: #82b3d3;
@@ -458,6 +479,8 @@ body {
   background-size: cover;
   color: #fff;
 }
+
+/* БЛОК С ЗАГОЛОВКОМ И ХЛЕБНЫМИ КРОШКАМИ */
 
 .inner-header {
   margin: 0 auto 40px;
@@ -495,6 +518,8 @@ body {
   background-position: center;
   margin-right: 10px;
 }
+
+/* ФИЛЬТР ОТЕЛЕЙ */
 
 .hotels-filter {
   margin: 0 auto;
@@ -609,6 +634,8 @@ body {
   background-color: transparent;
 }
 
+/* КАТАЛОГ ОТЕЛЕЙ */
+
 .hotels-catalog {
   margin: 0 auto;
   padding: 50px 0 60px;
@@ -692,8 +719,8 @@ body {
   margin: 0 0 80px;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
 }
 
@@ -702,7 +729,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 340px;
   min-height: 438px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -819,6 +845,8 @@ body {
   line-height: 26px;
   font-weight: 400;
 }
+
+/* БЛОК С ПОДПИСКОЙ */
 
 .subscribe-inner {
   background-image: none;
