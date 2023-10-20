@@ -59,6 +59,8 @@ body {
   overflow: hidden;
 }
 
+/* ГЛАВНАЯ СТРАНИЦА */
+
 /* ШАПКА САЙТА */
 
 .page-header {
@@ -204,11 +206,6 @@ body {
   grid-template-columns: repeat(3, 400px);
 }
 
-.advantages-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .advantages-item {
   display: flex;
   flex-direction: column;
@@ -217,15 +214,26 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(3) {
+/* КАЖДЫЙ ТРЕТИЙ ЭЛЕМЕНТ БОЛЕЕ ТЕМНЫМ ЦВЕТОМ */
+
+.advantages-item:nth-child(3n) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-wide {
+/* ПЕРВЫЙ И ПОСЛЕДНИЙ ЭЛЕМЕНТ СПИСКА СИНИМ ЦВЕТОМ */
+
+.advantages-item:first-child, .advantages-item:last-child {
+  background-color: #82b3d3;
+  color: #fff;
+  flex-direction: column;
+}
+
+.advantages-list .advantages-item-wide {
+  flex-direction: row;
   grid-column: 1 / span 3;
 }
 
-.advantages-item:last-child .advantages-wrapper {
+.advantages-list .advantages-item-wide-reverse {
   flex-direction: row-reverse;
 }
 
@@ -235,8 +243,6 @@ body {
   align-items: center;
   flex-direction: column;
   width: 400px;
-  background-color: #82b3d3;
-  color: #fff;
 }
 
 .advantages-subtitle {
@@ -469,7 +475,9 @@ body {
   background-image: url("../images/svg-icons/social-youtube.svg");
 }
 
-/* СТРАНИЦА КАТАЛОГА */
+/* СТРАНИЦА КАТАЛОГА ОТЕЛЕЙ */
+
+/* ОБЕРТКА ДЛЯ ЗАГОЛОВКА С ХЛЕБНЫМИ КРОШКАМИ И ФИЛЬТРОМ ОТЕЛЕЙ */
 
 .wrapper {
   padding: 35px 0 70px;
