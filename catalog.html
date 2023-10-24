@@ -81,22 +81,25 @@
                 ><input
                   name="waterpool"
                   type="checkbox"
-                  class="control-input"
+                  class="control-input visually-hidden"
                   checked
-                />Бассейн</label
+                /><span class="control-mark control-mark-checkbox"></span
+                >Бассейн</label
               ><label class="control"
                 ><input
                   name="parking"
                   type="checkbox"
-                  class="control-input"
+                  class="control-input visually-hidden"
                   checked
-                />Парковка</label
+                /><span class="control-mark control-mark-checkbox"></span
+                >Парковка</label
               ><label class="control"
                 ><input
                   name="wi-fi"
                   type="checkbox"
-                  class="control-input"
-                />Wi-Fi</label
+                  class="control-input visually-hidden"
+                /><span class="control-mark control-mark-checkbox"></span
+                >Wi-Fi</label
               >
             </fieldset>
 
@@ -106,24 +109,27 @@
                 ><input
                   name="hotel-type"
                   type="radio"
-                  class="control-input"
+                  class="control-input visually-hidden"
                   value="hotel"
                   checked
-                />Гостиница</label
+                /><span class="control-mark control-mark-radio"></span
+                >Гостиница</label
               ><label class="control"
                 ><input
                   name="hotel-type"
                   type="radio"
-                  class="control-input"
+                  class="control-input visually-hidden"
                   value="motel"
-                />Мотель</label
+                /><span class="control-mark control-mark-radio"></span
+                >Мотель</label
               ><label class="control"
                 ><input
                   name="hotel-type"
                   type="radio"
-                  class="control-input"
+                  class="control-input visually-hidden"
                   value="apartments"
-                />Апартаменты</label
+                /><span class="control-mark control-mark-radio"></span
+                >Апартаменты</label
               >
             </fieldset>
 
@@ -137,6 +143,7 @@
                     type="text"
                     class="control-input"
                     value="0"
+                    placeholder="0"
                   /><span class="control-input-text">от</span></label
                 >
                 <label class="control"
@@ -145,6 +152,7 @@
                     type="text"
                     class="control-input"
                     value="9000"
+                    placeholder="0"
                   /><span class="control-input-text">до</span></label
                 >
               </div>
@@ -153,8 +161,22 @@
                 type="range"
                 min="0"
                 max="9000"
-                class="control-range"
+                class="control-range visually-hidden"
               />
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button
+                      class="range-toggle toggle-min"
+                      type="button"
+                    ></button
+                    ><button
+                      class="range-toggle toggle-max"
+                      type="button"
+                    ></button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <ul class="filter-button-list">
               <li class="filter-button-item">
@@ -492,6 +514,8 @@
         ></a>
       </section>
     </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="modal">
       <div class="overlay"></div>
       <div class="modal-wrapper">
@@ -511,7 +535,7 @@
           </svg>
         </button>
         <form
-          action="htts://echo.htmlacademy.ru"
+          action="https://echo.htmlacademy.ru"
           method="post"
           class="modal-form"
         >
@@ -540,28 +564,88 @@
             >
           </label>
           <div class="modal-form-wrapper">
-            <label class="modal-form-input-group modal-form-plus-minus">
-              Взрослые:<input
-                type="text"
-                class="modal-form-input"
-                name="adults-number"
-                value="2"
-              />
+            <label class="modal-form-input-group clients-number">
+              Взрослые:
+              <span class="clients-number-wrapper">
+                <span
+                  class="clients-number-button clients-number-button-minus"
+                  aria-label="Кнопка. Уменьшить количество"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="2"
+                    viewBox="0 0 14 2"
+                  >
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </span>
+                <span
+                  class="clients-number-button clients-number-button-plus"
+                  aria-label="Кнопка. Увеличить количество"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                  >
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  class="modal-form-input"
+                  name="adults-number"
+                  value="2"
+                />
+              </span>
             </label>
-            <label class="modal-form-input-group modal-form-plus-minus">
+            <label class="modal-form-input-group clients-number">
               Дети:
-              <span class="tooltip"></span>
-              <input
-                type="text"
-                class="modal-form-input"
-                name="kids-number"
-                value="2"
-              />
+              <span class="tooltip">
+                <span class="tooltip-text tooltip-text-active"
+                  >Укажите количество детей, которые будут с вами, возраст
+                  которых от 6 до 18 лет. Дети до 6 лет размещаются
+                  бесплатно.</span
+                >
+              </span>
 
-              <span class="tooltip-text tooltip-text-active"
-                >Укажите количество детей, которые будут с вами, возраст которых
-                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
-              >
+              <span class="clients-number-wrapper">
+                <span
+                  class="clients-number-button clients-number-button-minus"
+                  aria-label="Кнопка. Уменьшить количество"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="2"
+                    viewBox="0 0 14 2"
+                  >
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </span>
+                <span
+                  class="clients-number-button clients-number-button-plus"
+                  aria-label="Кнопка. Увеличить количество"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                  >
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </span>
+
+                <input
+                  type="text"
+                  class="modal-form-input"
+                  name="kids-number"
+                  value="2"
+                />
+              </span>
             </label>
           </div>
 

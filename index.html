@@ -321,7 +321,7 @@
           </svg>
         </button>
         <form
-          action="htts://echo.htmlacademy.ru"
+          action="https://echo.htmlacademy.ru"
           method="post"
           class="modal-form"
         >
@@ -350,28 +350,94 @@
             >
           </label>
           <div class="modal-form-wrapper">
-            <label class="modal-form-input-group modal-form-plus-minus">
-              Взрослые:<input
-                type="text"
-                class="modal-form-input"
-                name="adults-number"
-                value="2"
-              />
+            <label class="modal-form-input-group clients-number">
+              Взрослые:
+              <span class="clients-number-wrapper">
+                <span
+                  class="clients-number-button clients-number-button-minus"
+                  aria-label="Кнопка. Уменьшить количество"
+                  tabindex="0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="2"
+                    viewBox="0 0 14 2"
+                  >
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </span>
+                <span
+                  class="clients-number-button clients-number-button-plus"
+                  aria-label="Кнопка. Увеличить количество"
+                  tabindex="0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                  >
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  class="modal-form-input"
+                  name="adults-number"
+                  value="2"
+                  placeholder="0"
+                />
+              </span>
             </label>
-            <label class="modal-form-input-group modal-form-plus-minus">
+            <label class="modal-form-input-group clients-number">
               Дети:
-              <span class="tooltip"></span>
-              <input
-                type="text"
-                class="modal-form-input"
-                name="kids-number"
-                value="2"
-              />
+              <span class="tooltip" tabindex="0" aria-labelledby="tooltip-date">
+                <span class="tooltip-text tooltip-text-active" id="tooltip-date"
+                  >Укажите количество детей, которые будут с вами, возраст
+                  которых от 6 до 18 лет. Дети до 6 лет размещаются
+                  бесплатно.</span
+                >
+              </span>
 
-              <span class="tooltip-text tooltip-text-active"
-                >Укажите количество детей, которые будут с вами, возраст которых
-                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
-              >
+              <span class="clients-number-wrapper">
+                <span
+                  class="clients-number-button clients-number-button-minus"
+                  aria-label="Кнопка. Уменьшить количество"
+                  tabindex="0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="2"
+                    viewBox="0 0 14 2"
+                  >
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </span>
+                <span
+                  class="clients-number-button clients-number-button-plus"
+                  aria-label="Кнопка. Увеличить количество"
+                  tabindex="0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                  >
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </span>
+
+                <input
+                  type="text"
+                  class="modal-form-input"
+                  name="kids-number"
+                  value="2"
+                  placeholder="0"
+                />
+              </span>
             </label>
           </div>
 
