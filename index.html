@@ -39,7 +39,8 @@
         <a class="search" href="#">
           <span class="visually-hidden">Перейти в поиск</span>
         </a>
-        <a class="likes" href="#">
+        <a class="favourites" href="#">
+          <span class="favourites-counter">12</span>
           <span class="visually-hidden">Перейти в избранное</span>
         </a>
         <a href="#" class="button page-header-button">Хочу сюда!</a>
@@ -319,6 +320,7 @@
               fill="black"
             />
           </svg>
+          <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <form
           action="https://echo.htmlacademy.ru"
@@ -356,7 +358,6 @@
                 <span
                   class="clients-number-button clients-number-button-minus"
                   aria-label="Кнопка. Уменьшить количество"
-                  tabindex="0"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -370,7 +371,6 @@
                 <span
                   class="clients-number-button clients-number-button-plus"
                   aria-label="Кнопка. Увеличить количество"
-                  tabindex="0"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -382,18 +382,17 @@
                   </svg>
                 </span>
                 <input
-                  type="text"
+                  type="number"
                   class="modal-form-input"
                   name="adults-number"
                   value="2"
-                  placeholder="0"
                 />
               </span>
             </label>
             <label class="modal-form-input-group clients-number">
               Дети:
-              <span class="tooltip" tabindex="0" aria-labelledby="tooltip-date">
-                <span class="tooltip-text tooltip-text-active" id="tooltip-date"
+              <span class="tooltip">
+                <span class="tooltip-text tooltip-text-active"
                   >Укажите количество детей, которые будут с вами, возраст
                   которых от 6 до 18 лет. Дети до 6 лет размещаются
                   бесплатно.</span
@@ -404,7 +403,6 @@
                 <span
                   class="clients-number-button clients-number-button-minus"
                   aria-label="Кнопка. Уменьшить количество"
-                  tabindex="0"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -418,7 +416,6 @@
                 <span
                   class="clients-number-button clients-number-button-plus"
                   aria-label="Кнопка. Увеличить количество"
-                  tabindex="0"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -431,11 +428,10 @@
                 </span>
 
                 <input
-                  type="text"
+                  type="number"
                   class="modal-form-input"
                   name="kids-number"
                   value="2"
-                  placeholder="0"
                 />
               </span>
             </label>

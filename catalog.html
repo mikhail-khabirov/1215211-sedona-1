@@ -39,7 +39,8 @@
         <a class="search" href="#">
           <span class="visually-hidden">Перейти в поиск</span>
         </a>
-        <a class="likes" href="#">
+        <a class="favourites" href="#">
+          <span class="favourites-counter">12</span>
           <span class="visually-hidden">Перейти в избранное</span>
         </a>
         <a href="#" class="button page-header-button">Хочу сюда!</a>
@@ -55,14 +56,12 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a
-                href="index.html"
-                class="breadcrumbs-link breadcrumbs-link-index"
+              <a href="index.html" class="breadcrumbs-link-index"
                 ><span class="visually-hidden">Главная</span></a
               >
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
             </li>
           </ol>
         </header>
@@ -140,7 +139,7 @@
                 <label class="control">
                   <input
                     name="min-price"
-                    type="text"
+                    type="number"
                     class="control-input"
                     value="0"
                     placeholder="0"
@@ -149,47 +148,37 @@
                 <label class="control"
                   ><input
                     name="max-price"
-                    type="text"
+                    type="number"
                     class="control-input"
                     value="9000"
                     placeholder="0"
                   /><span class="control-input-text">до</span></label
                 >
               </div>
-              <input
-                name="range-price"
-                type="range"
-                min="0"
-                max="9000"
-                class="control-range visually-hidden"
-              />
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button
-                      class="range-toggle toggle-min"
-                      type="button"
-                    ></button
-                    ><button
-                      class="range-toggle toggle-max"
-                      type="button"
-                    ></button>
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden"
+                        >Установить минимальную цену</span
+                      ></button
+                    ><button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden"
+                        >Установить максимальную цену</span
+                      >
+                    </button>
                   </div>
                 </div>
               </div>
             </fieldset>
-            <ul class="filter-button-list">
-              <li class="filter-button-item">
-                <button class="button filter-button" type="button">
-                  Применить
-                </button>
-              </li>
-              <li class="filter-button-item">
-                <button class="button filter-button-reset" type="button">
-                  Сбросить
-                </button>
-              </li>
-            </ul>
+            <div class="filter-button-block">
+              <button class="button filter-button" type="submit">
+                Применить
+              </button>
+              <button class="button filter-button-reset" type="reset">
+                Сбросить
+              </button>
+            </div>
           </form>
         </section>
       </div>
@@ -216,7 +205,7 @@
             <li class="select-item">
               <button
                 type="button"
-                class="button select-button select-button-cards select-button-active"
+                class="select-button select-button-cards select-button-active"
               >
                 <span class="visually-hidden">Показать карточками</span>
               </button>
@@ -224,16 +213,13 @@
             <li class="select-item">
               <button
                 type="button"
-                class="button select-button select-button-separate"
+                class="select-button select-button-separate"
               >
                 <span class="visually-hidden">Показать по одиночке</span>
               </button>
             </li>
             <li class="select-item">
-              <button
-                type="button"
-                class="button select-button select-button-list"
-              >
+              <button type="button" class="select-button select-button-list">
                 <span class="visually-hidden">Показать списком</span>
               </button>
             </li>
@@ -533,6 +519,7 @@
               fill="black"
             />
           </svg>
+          <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <form
           action="https://echo.htmlacademy.ru"
@@ -594,7 +581,7 @@
                   </svg>
                 </span>
                 <input
-                  type="text"
+                  type="number"
                   class="modal-form-input"
                   name="adults-number"
                   value="2"
@@ -640,7 +627,7 @@
                 </span>
 
                 <input
-                  type="text"
+                  type="number"
                   class="modal-form-input"
                   name="kids-number"
                   value="2"
