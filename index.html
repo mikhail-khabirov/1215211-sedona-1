@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>HTML Academy: Седона</title>
+    <title>Седона - Главная страница</title>
   </head>
   <body>
     <!-- ШАПКА САЙТА -->
@@ -12,9 +14,9 @@
       <!-- ЛОГОТИП -->
       <a class="logo"
         ><img
-          src="images/svg-icons/logo.svg"
-          alt="логотип Седоны"
           class="logo-pic"
+          src="images/svg-icons/logo.svg"
+          alt="Логотип Седоны."
           width="140"
           height="70"
       /></a>
@@ -26,10 +28,10 @@
             <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">О седоне</a>
+            <a class="navigation-link" href="#">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -37,13 +39,13 @@
       <!-- ПОЛЬЗОВАТЕЛЬСКОЕ МЕНЮ -->
       <div class="user-menu">
         <a class="search" href="#">
-          <span class="visually-hidden">Перейти в поиск</span>
+          <span class="visually-hidden">Перейти в поиск.</span>
         </a>
         <a class="favourites" href="#">
           <span class="favourites-counter">12</span>
-          <span class="visually-hidden">Перейти в избранное</span>
+          <span class="visually-hidden">Перейти в избранное.</span>
         </a>
-        <a href="#" class="button page-header-button">Хочу сюда!</a>
+        <a class="button page-header-button" href="#">Хочу сюда!</a>
       </div>
     </header>
 
@@ -51,11 +53,11 @@
     <main class="main-index">
       <!-- ПРОМО-БЛОК -->
       <section class="hero">
-        <h1 class="visually-hidden">город Седона</h1>
+        <h1 class="visually-hidden">город Седона.</h1>
         <img
-          src="images/svg-icons/hero-text.svg"
-          alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks"
           class="hero-pic-text"
+          src="images/svg-icons/hero-text.svg"
+          alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks."
           width="458"
           height="352"
         />
@@ -63,7 +65,7 @@
 
       <!-- ПРЕИМУЩЕСТВА -->
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества города</h2>
+        <h2 class="visually-hidden">Преимущества города.</h2>
         <p class="advantages-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
@@ -79,9 +81,9 @@
               </p>
             </div>
             <img
-              src="images/advantages-picture-city.jpg"
-              alt="вид на Седону"
               class="advantages-pic"
+              src="images/advantages-picture-city.jpg"
+              alt="Вид на Седону."
               width="800"
               height="385"
             />
@@ -117,9 +119,9 @@
               </p>
             </div>
             <img
-              src="images/advantages-picture-mountains.jpg"
-              alt="вид на мост"
               class="advantages-pic"
+              src="images/advantages-picture-mountains.jpg"
+              alt="Вид на мост."
               width="800"
               height="385"
             />
@@ -129,7 +131,7 @@
 
       <!-- УСЛУГИ -->
       <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
+        <h2 class="visually-hidden">Услуги.</h2>
         <p class="services-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </p>
@@ -164,13 +166,13 @@
 
       <!-- ПОИСК ОТЕЛЯ -->
       <section class="hotel-search">
-        <h2 class="visually-hidden">Поиск гостинницы</h2>
+        <h2 class="visually-hidden">Поиск гостинницы.</h2>
         <p class="hotel-search-title">Заинтересовались?</p>
         <p class="hotel-search-description">
           Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <a href="#" class="button hotel-search-button">
+        <a class="button hotel-search-button" href="#">
           Поиск гостиницы в седоне
         </a>
       </section>
@@ -182,9 +184,9 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form
+          class="subscribe-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
-          class="subscribe-form"
         >
           <input
             name="client-email"
@@ -203,16 +205,17 @@
     <footer class="page-footer">
       <!-- КОНТАКТЫ -->
       <section class="contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация.</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://vk.com/htmlacademy" class="social-link"
-              ><span class="visually-hidden">Вконтакте</span>
+            <a class="social-link" href="https://vk.com/htmlacademy"
+              ><span class="visually-hidden">Вконтакте.</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="15"
                 viewBox="0 0 25 15"
+                role="img"
               >
                 <path
                   fill-rule="evenodd"
@@ -223,13 +226,14 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="https://t.me/htmlacademy " class="social-link"
-              ><span class="visually-hidden">Телеграм</span>
+            <a class="social-link" href="https://t.me/htmlacademy "
+              ><span class="visually-hidden">Телеграм.</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
                 height="17"
                 viewBox="0 0 18 17"
+                role="img"
               >
                 <path
                   d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283 10.8192L6.77045 15.0387C7.18413 15.0387 7.36669 14.8489 7.59871 14.625L9.58705 12.6915L13.7229 15.7464C14.4855 16.1664 15.0332 15.9506 15.2229 15.0405L17.9379 2.2453C18.2158 1.13107 17.5126 0.626562 16.785 0.955705Z"
@@ -239,14 +243,15 @@
           </li>
           <li class="social-item">
             <a
-              href="https://www.youtube.com/user/htmlacademyru"
               class="social-link"
-              ><span class="visually-hidden">Ютуб</span>
+              href="https://www.youtube.com/user/htmlacademyru"
+              ><span class="visually-hidden">Ютуб.</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
                 height="18"
                 viewBox="0 0 23 18"
+                role="img"
               >
                 <path
                   d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z"
@@ -255,14 +260,16 @@
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212" class="contacts-phone">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/" class="html-academy-logo"
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="html-academy-logo" href="https://htmlacademy.ru/"
           ><svg
             class="html-academy-logo-pic"
             xmlns="http://www.w3.org/2000/svg"
             width="115"
             height="34"
             viewBox="0 0 115 34"
+            role="img"
+            aria-label="Логотип HTML Академии."
           >
             <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" />
             <path
@@ -302,36 +309,37 @@
       </section>
     </footer>
 
-    <!-- МОДАЛЬНОЕ ОКНО -->
+    <!-- МОДАЛЬНОЕ ОКНО.ЧТОБЫ ОНО ОТОБРАЖАЛОСЬ. НУЖНО ДОБАВИТЬ КЛАСС modal-open ИЛИ НАЖАТЬ НА КНОПКИ "ХОЧУ СЮДА", "ПОИСК ГОСТИНИЦЫ В СЕДОНЕ" -->
     <div class="modal">
       <div class="overlay"></div>
       <div class="modal-wrapper">
         <p class="modal-title">Поиск гостиницы в Седоне</p>
-        <button class="modal-close">
+        <button class="modal-close" type="button">
           <svg
             class="modal-close-icon"
             xmlns="http://www.w3.org/2000/svg"
             width="14"
             height="14"
             viewBox="0 0 14 14"
+            role="img"
           >
             <path
               d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"
               fill="black"
             />
           </svg>
-          <span class="visually-hidden">Закрыть модальное окно</span>
+          <span class="visually-hidden">Закрыть модальное окно.</span>
         </button>
         <form
+          class="modal-form"
           action="https://echo.htmlacademy.ru"
           method="post"
-          class="modal-form"
         >
           <label class="modal-form-input-group">
             Дата заезда:
             <input
-              type="text"
               class="modal-form-input"
+              type="text"
               name="arrival-date"
               value="27 апреля 2020"
               placeholder="Укажите дату"
@@ -342,8 +350,8 @@
           <label class="modal-form-input-group">
             Дата выезда:
             <input
-              type="text"
               class="modal-form-input"
+              type="text"
               name="departure-date"
               value="1 сентября 2023"
               placeholder="Укажите дату"
@@ -357,42 +365,48 @@
               <span class="clients-number-wrapper">
                 <span
                   class="clients-number-button clients-number-button-minus"
-                  aria-label="Кнопка. Уменьшить количество"
+                  aria-label="Кнопка Уменьшить количество."
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
                     height="2"
                     viewBox="0 0 14 2"
+                    role="img"
                   >
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                 </span>
                 <span
                   class="clients-number-button clients-number-button-plus"
-                  aria-label="Кнопка. Увеличить количество"
+                  aria-label="Кнопка Увеличить количество."
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
                     height="14"
                     viewBox="0 0 14 14"
+                    role="img"
                   >
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
                 </span>
                 <input
-                  type="number"
                   class="modal-form-input"
+                  type="number"
                   name="adults-number"
                   value="2"
+                  placeholder="0"
                 />
               </span>
             </label>
             <label class="modal-form-input-group clients-number">
               Дети:
-              <span class="tooltip">
-                <span class="tooltip-text tooltip-text-active"
+              <span class="tooltip" aria-labelledby="tooltip-label">
+                <span
+                  class="tooltip-text tooltip-text-active"
+                  id="tooltip-label"
+                  role="tooltip"
                   >Укажите количество детей, которые будут с вами, возраст
                   которых от 6 до 18 лет. Дети до 6 лет размещаются
                   бесплатно.</span
@@ -402,36 +416,39 @@
               <span class="clients-number-wrapper">
                 <span
                   class="clients-number-button clients-number-button-minus"
-                  aria-label="Кнопка. Уменьшить количество"
+                  aria-label="Кнопка Уменьшить количество."
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
                     height="2"
                     viewBox="0 0 14 2"
+                    role="img"
                   >
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                 </span>
                 <span
                   class="clients-number-button clients-number-button-plus"
-                  aria-label="Кнопка. Увеличить количество"
+                  aria-label="Кнопка Увеличить количество."
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
                     height="14"
                     viewBox="0 0 14 14"
+                    role="img"
                   >
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
                 </span>
 
                 <input
-                  type="number"
                   class="modal-form-input"
+                  type="number"
                   name="kids-number"
                   value="2"
+                  placeholder="0"
                 />
               </span>
             </label>
